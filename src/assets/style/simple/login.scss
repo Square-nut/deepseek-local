@@ -1,0 +1,218 @@
+.hos-container {
+  height: 100%;
+}
+.hos-container .login-simple-hos-main {
+  // margin-top: 63px;
+  padding: 0;
+  // background-color: skyBlue;
+  overflow: hidden;
+  .header-four-box {
+    display: flex;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 63px;
+    align-items: center;
+    position: relative;
+    top: 63px;
+    .left-group-box {
+      height: 30px;
+      width: 120px;
+      background: url("~@sys/assets/images/login/55.png") center center no-repeat;
+    }
+    .right-group-box {
+      height: 30px;
+      width: 120px;
+      background: url("~@sys/assets/images/login/56.png") center center no-repeat;
+    }
+    .center {
+      flex: 1;
+      text-align: center;
+      font-size: 32px;
+      font-family: Microsoft YaHei-Bold, Microsoft YaHei;
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+  .simple-login-mid {
+    .hos-carousel__indicator{
+      display: none;
+    }
+    width: 100%;
+    // height: 530px;
+    min-height: 380px;
+    height: calc(100vh - 186px);
+    // background-color: #00479d;
+    position: relative;
+    .hos-carousel{
+      height:100%;
+    }
+    .hos-carousel__button {
+      width: 12px;
+      height: 12px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+    .hos-carousel__indicator.is-active button {
+      background-color: #00479d;
+    }
+    .simple-login-card {
+      z-index: 999;
+      position: absolute;
+      top: 50%;
+      // right: 141px;
+      right: 12%; // 广西项目调整
+      width: 350px;
+      transform:translateY(-50%);
+      max-height: 375px;
+      box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+  // ca样式
+  .ca-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#12aa2c;
+    text-align: center;
+    i{
+      font-size: 16px;
+    }
+    .ca-login-icon{
+      display:inline-block;
+      font-size: 14px;
+      margin-right: 6px;
+      cursor: pointer;
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.simple-footer {
+  text-align: center;
+  margin-top: 20px;
+  .simple-com-logo {
+    width: 90px;
+    height: 14px;
+    display: inline-block;
+    background: url("~@sys/assets/images/login/logo.png") center center no-repeat;
+  }
+  .simple-foot-font {
+    padding-left: 8px;
+    font-size: 12px;
+    font-family: MicrosoftYaHei-, MicrosoftYaHei;
+    font-weight: normal;
+    color: #999999;
+  }
+}
+
+.simple-login-card {
+  .title-container .title {
+    font-size: 18px;
+    font-family: MicrosoftYaHei-, MicrosoftYaHei;
+    font-weight: normal;
+    color: #333333;
+    line-height: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .hos-card {
+    border-radius: 0;
+    height: 100%;
+  }
+  .hos-form-item__content {
+    padding-left: 40px;
+    padding-right: 14px;
+  }
+  .hos-input__inner {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 0;
+  }
+  .login-card .hos-tabs {
+    width: 100%;
+  }
+  .login-card .hos-tabs__content {
+    height: auto;
+  }
+  .hos-tabs--top:not(.hos-tabs--border-card):not(.hos-tabs--second-level)
+  > .hos-tabs__content {
+    border: none;
+  }
+  .login-card .tenantSelect {
+    margin-top: 8px;
+  }
+  .login-card .hos-input__prefix {
+    line-height: 30px;
+    color: #c1c1c1;
+  }
+  .login-card .hos-input:hover .hos-input__icon {
+    color: #c1c1c1;
+  }
+  .login-card .tenantSelect:hover + i {
+    color: #c1c1c1;
+    margin-top: 13px;
+  }
+  .login-card .hos-input__prefix {
+    position: absolute;
+    left: -40px;
+  }
+  .login-card .hos-input--prefix .hos-input__inner {
+    padding-left: 0;
+  }
+  .hos-button--primary {
+    background-color: #2172ba;
+    border-color: #2172ba;
+    height: 38px;
+    border-radius: 4px;
+  }
+  .hos-input__inner:hover {
+    background: #fff;
+  }
+  .hos-input:not(.is-disabled):hover .hos-input__inner {
+    background: #fff;
+  }
+}
+.hos-select-dropdown.hos-popper.tenantPop {
+  background: #fff !important;
+  backdrop-filter: blur(30px);
+  margin-top: -2px;
+}
+
+.simple-login-btn {
+  .hos-form-item .hos-form-item__content {
+    padding: 0 14px;
+  }
+}
+.loginErrBox {
+  padding-bottom: 10px;
+  padding-left: 14px;
+  color: #fa3939;
+}
+
+
+.select-table-v2-popover {
+  width: 500px !important;
+  height: 370px !important;
+  .hos-table--fit {
+    padding: 0;
+  }
+  .hos-biz-pagination {
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+  .hos-table--border::after {
+    width: 0;
+  }
+  .hos-biz-form {
+    border: none;
+  }
+  .mb15 {
+    margin-bottom: 0;
+  }
+}

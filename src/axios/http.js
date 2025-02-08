@@ -17,9 +17,16 @@ class HttpService {
    */
   request(url, params,headers) {
     // 得到解析数据
-    const { api, config } = loader(url);
+    const { api, config, isDomain, key } = loader(url);
+    
+    let apiConfig = null;
 
-    let apiConfig = api(params)
+    if(isDomain) {
+      apiConfig.url = key
+      apiConfig.params = params
+    } else {
+      apiConfig = api(params)
+    }
 
     // 合并策略  全局配置-->模块配置-->单独配置
     let options = Object.assign({}, this.options, config, apiConfig);

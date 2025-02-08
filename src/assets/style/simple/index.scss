@@ -1,0 +1,300 @@
+@import './login.scss';
+@import './simple-navigation.scss';
+@import './simple-biz-table.scss';
+// @import './perm.scss';
+// @import './sys.scss';
+// @import './resource.scss';
+
+//弹出层footer的位置，以及每个button之间的间距
+.dialog-footer {
+  text-align: center;
+  padding-top: 20px;
+
+  .hos-button + .hos-button {
+    margin-left: 20px;
+  }
+}
+
+////表格
+//.hos-table {
+//  //操作按钮的样式
+//  .hos-tooltip {
+//    padding-left: 5px;
+//    padding-right: 5px;
+//    //font-size: 16px;
+//  }
+//}
+
+.hos-date-editor.auto_width.hos-input,
+.hos-date-editor.auto_width.hos-input__inner {
+  width: auto;
+}
+
+.auto_width {
+  width: auto;
+}
+
+.hos-card.user_card.is-always-shadow {
+  margin-top: 10px;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 10%);
+}
+//导入中间的宽度
+.hos-divider--horizontal {
+  margin: 15px 0;
+}
+
+// table in card
+.card-table {
+  height: 100%;
+  border: 1px solid #e2e2e2;
+  & .hos-card__header {
+    border-bottom: 0;
+  }
+  & .hos-card__body {
+    padding: 0;
+    height: 100%;
+  }
+  .hos-card__header + .hos-card__body {
+    height: auto;
+  }
+  .hos-biz-pagination {
+    // position: absolute;
+    // bottom: 0;
+    width: 100%;
+  }
+  .hos-biz-table .hos-biz-form,
+  .hos-biz-table .hos-biz-toolbar,
+  .hos-table--border,
+  .hos-table {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  .hos-biz-table .hos-biz-pagination {
+    border: 0;
+    border-top: 1px solid #e2e2e2;
+  }
+  .hos-button-group.hos {
+    box-shadow: 0 0px 0px #fff;
+    border-radius: 0;
+  }
+  .hos-biz-table .hos-biz-form {
+    padding: 11px 11px 0 11px;
+  }
+  .hos-date-editor--daterange.hos-input__inner {
+    width: 100%;
+  }
+  .hos-form-item--small.hos-form-item {
+    margin-bottom: 10px;
+  }
+  // .hos-form-item__label {
+  //   text-align: left;
+  // }
+  .hos-radio {
+    margin-right: 15px;
+  }
+}
+
+// table in tabs
+.tabs-table {
+  .hos-tabs {
+    height: 100%;
+
+    .hos-tabs__header {
+      margin-bottom: 0;
+    }
+
+    .hos-tabs__content {
+      height: calc(100% - 31px);
+
+      .hos-tab-pane {
+        height: 100%;
+      }
+    }
+  }
+}
+.vue-treeselect--disabled .vue-treeselect__single-value {
+  position: absolute;
+}
+.datapicker {
+  width: 100% !important;
+  //min-width: 240px;
+}
+.dataker .hos-input__inner.hos-date-editor--daterange .hos-range__close-icon {
+  margin-left: -5px;
+}
+.assignuser > .hos-date-editor.hos-input {
+  width: 100%;
+}
+.assignuser,
+.user_card .hos-date-editor.hos-input {
+  width: 100% !important;
+}
+//导入组件
+.comupload {
+  .type-div {
+    margin-left: 20%;
+    text-align: left;
+  }
+  .shadow {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #dcdfe6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .div-loc {
+    text-align: center;
+    margin-bottom: 10px;
+    //min-height: 200px;
+  }
+  .step-child-div {
+    margin-left: 25%;
+    margin-top: 10px;
+    .hos-link--inner {
+      margin-bottom: 4px;
+    }
+  }
+}
+.comexport {
+  //height: 200px;
+  width: 95%;
+  margin: auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+// 左树右表
+.left-tree-right-table {
+  height: 100%;
+  .left-tree-search {
+    padding: 10px 10px 0;
+  }
+  .hos-main {
+    padding: 0;
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  .hos-aside {
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .hos-tree {
+    height: calc(100% - 71px);
+    overflow: auto;
+    padding-left: 10px;
+  }
+}
+.hos-container.main .hos-aside {
+  box-shadow: none;
+}
+.simple-input-number {
+  .hos-input-number {
+    width: 100%;
+  }
+}
+
+.hosInputNumber {
+  width: 200px;
+}
+.pwdFormItem {
+  display: inline-block;
+}
+// 对话框框垂直水平居中
+.hos-dialog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// 对话框滚动条
+.hos-dialog__body {
+  padding: 0;
+  .hos-form {
+    padding: 12px 12px 0 12px;
+  }
+}
+//滚动条背景色
+::-webkit-scrollbar-track-piece {
+  background-color: #f1f1f1;
+}
+//滚动条颜色
+::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4 !important;
+}
+//只针对dialog的body部分是form的情况，因为每个form-item都有个10px的margin-bottom
+.dialog-footer {
+  padding: 10px 0 20px 0;
+}
+//数据权限作用域维护
+.data-pri-scope {
+  padding: 10px;
+  padding-bottom: 0;
+  .hos-tabs__content {
+    min-height: 130px;
+  }
+  .dialog-footer {
+    padding-top: 20px;
+  }
+}
+
+//版本管理版本授权
+.tenant-package-auth {
+  padding: 12px 0 0 12px;
+  .dialog-footer {
+    padding-top: 20px;
+  }
+}
+
+// 数据日志查看
+.data-view .hos-table__body-wrapper {
+  max-height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+  .dialog-footer {
+    padding-top: 20px;
+  }
+}
+//页面预置，元素/数据权限列表
+.sys-perm-page .hos-table--border {
+  border-right: none !important;
+}
+// 上传头像 切换角色
+.upload-avatar .dialog-footer {
+  padding-top: 20px;
+  line-height: 28px;
+}
+//修改密码
+.change-pass {
+  .hos-dialog__body .hos-form {
+    padding-top: 0;
+  }
+  .hos-form-item__label {
+    vertical-align: top;
+  }
+  .hos-form-item {
+    margin-bottom: 20px;
+  }
+  .dialog-footer {
+    line-height: 28px;
+  }
+}
+.hos-menu-item [class^='hos-icom-'],
+.hos-menu-item [class^='hos-icon-'] {
+  font-size: 16px;
+}
+// 滚动条宽度设置为 8px
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.hos-message--error .hos-icom-cancel {
+  color: #f25757;
+}
+
+.hos-button .hos-button__primary {
+  border-radius: 2px;
+}

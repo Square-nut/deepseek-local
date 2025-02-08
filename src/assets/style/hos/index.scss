@@ -1,0 +1,19 @@
+@import '~hosui/lib/theme-chalk/index.css';
+@import './navigation.css';
+@import './login.scss';
+// @import './biz-table.scss';
+@import './hos-biz-table.scss';
+// @import './perm.scss';
+// @import './sys.scss';
+
+
+//弹出层footer的位置，以及每个button之间的间距
+.dialog-footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .hos-button + .hos-button {
+    margin-left: 20px;
+  }
+}

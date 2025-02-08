@@ -1,0 +1,143 @@
+//左侧asdie添加container-height样式
+.hos-container .main .base-container {
+  height: 100%;
+  //左侧菜单的阴影
+  .hos-aside {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px #dbdbdb;
+  }
+
+  .hos-main {
+    padding: 0px !important;
+    margin-left: 10px;
+    height: 100%;
+  }
+}
+
+.hos-main{
+  padding:0px !important;
+}
+
+//工作区间的样式
+.hos-main-workspace {
+  height: calc(100% - 56px);
+  background: #f5f5f5;
+  padding: 10px;
+
+  //表格上的按钮
+  .hos-button-group {
+    margin: 10px 0px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 0px #dbdbdb;
+
+    [class^=hos-icon-] {
+      font-size: 16px;
+    }
+
+    [class^=hos-icom-] {
+      font-size: 16px;
+    }
+
+    .hos-button--small {
+      padding: 9px;
+    }
+
+    .hos-button {
+      border: none;
+      color: #807f89;
+    }
+
+    //button的分割线
+    .hos-divider--vertical {
+      height: 26px;
+      margin: 5px 0 0 0;
+      float:left;
+      background: #dae2ee;
+    }
+  }
+}
+
+//给表格的检索条件添加阴影
+.base-form {
+  background: #ffffff;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 4px 0px #dbdbdb;
+}
+
+//给table添加阴影
+.hos-table {
+  height: calc(100% - 126px);
+  border-radius: 2px 2px 5px 5px;
+  box-shadow: 0px 0px 4px 0px #dbdbdb;
+
+  .hos-form-item{
+    margin:0px;
+  }
+}
+
+//表格上的操作按钮的样式
+.hos-biz-pagination {
+  padding: 0;
+
+  .hos-pagination {
+    padding: 10px 0px;
+  }
+}
+
+
+////表格
+//.hos-table {
+//  overflow: auto !important;
+//  //操作按钮的样式
+//  .hos-tooltip {
+//    padding-left: 5px;
+//    padding-right: 5px;
+//  }
+//}
+
+.hos-table__body-wrapper{
+  overflow: auto !important;
+}
+
+//弹出层footer的位置，以及每个button之间的间距
+.dialog-footer {
+  text-align: center;
+  padding-top: 20px;
+
+  .hos-button + .hos-button {
+    margin-left: 80px;
+  }
+}
+
+
+.hos-form{
+ /*  .hos-col{
+    min-height: 51px;
+  } */
+
+  //对日期控制的宽度控制
+  .hos-date-editor--daterange.hos-input, .hos-date-editor--daterange.hos-input__inner, .hos-date-editor--timerange.hos-input, .hos-date-editor--timerange.hos-input__inner{
+    width:100%;
+  }
+
+  .hos-date-editor.hos-input, .hos-date-editor.hos-input__inner{
+    width:auto;
+  }
+}
+
+
+
+//只针对图标的下拉框样式处理
+.hos-select-dropdownCurrent{
+  width: 400px!important;
+    .hos-select-dropdown__item {
+    display: inline;
+  }
+}
+
+
+

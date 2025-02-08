@@ -1,0 +1,197 @@
+// base-perm-scope
+$-h-fit: 100%;
+
+.base-perm-scope {
+	.tabs-table .hos-tabs {
+		border-bottom: 1px solid #e2e2e2;
+	}
+	
+	.hos-card {
+    height: calc(100% - 2px);
+		width: calc(100% - 2px) !important;
+		border-color: #e2e2e2;
+
+		.hos-card__body {
+			height: calc(100% - 35px);
+			padding: 0;
+			padding-left: 10px;
+		}
+	}
+	.hos-tabs__content {
+		padding: 0 15px 15px;
+	}
+	.hos-main {
+		padding: 0;
+		margin-left: 10px;
+
+    .userTab .hos-tabs__content {
+      box-sizing: border-box;
+			padding: 10px;
+			background: #fff;
+    }
+	}
+
+	.main-tree {
+		height: calc(100% - 64px);
+		overflow: auto;
+	}
+
+	.resource-tree-wrap {
+		height: calc(100% - 130px);
+		overflow: auto;
+	}
+    .tc {
+		margin: 20px 0 10px 0;
+	}
+	.userTree {
+		height: calc(100% - 64px);
+
+    .hos-tree {
+      height: calc(100% - 100px);
+      overflow: auto;
+    }
+  }
+	.backg {
+		width: 100%;
+		background-color: white;
+		img {
+			width: 300px;
+			margin: 0 auto;
+			display: block;
+			margin-top: 180px;
+		}
+		div {
+			text-align: center;
+			margin-top: 30px;
+		}
+	}
+}
+//角色管理
+.margin10 {
+    margin:10px 0 0 0;
+}
+.margin1{
+    margin:0 10px 10px 0
+}
+.user-add-tree .dialog-footer {
+	margin-right: 10px;
+}
+.role-tabs {
+	.authtab{
+		.hos-tabs--second-level {
+			& + div{
+				padding:0;
+			}
+		}
+		.hos-input {
+			margin:0;
+			width: 100%;
+		}
+		.hos-main .hos-tabs--second-level .hos-tabs__header {
+			margin: 0;
+		}
+	}
+	&.hos-tabs--system .hos-tabs__header {
+		margin: 10px 10px 0 10px;
+		border-radius: 4px;
+	}
+	.hos-tab-pane {
+		padding: 10px 0 0 10px;
+		}
+		.hos-input {
+			width: calc(100% - 10px);
+			margin: auto;
+			margin-top: 10px;
+		}
+		.hos-alert {
+			width: 378px;
+			padding: 4px 8px;
+		}
+		.dialog-footer {
+			padding: 20px 10px 20px 0;
+		}
+	.w200 {
+		width: 200px!important;
+		height: 440px;
+		padding: 10px;
+	}
+	.hos-main {
+		padding: 0 10px 0 10px;
+	}
+	.hos-aside {
+		border: 1px solid #e2e2e2;
+		border-radius: 4px;
+		box-shadow: none!important;
+	}
+	.hos-tree {
+		height: calc(100% - 28px);
+    	overflow: auto;
+	}
+	.hos-tabs {
+		height: 30px;
+	}
+	.authtab {
+		.hos-aside .role-tabs .hos-input {
+			margin-top: 0;
+		}
+		.dialog-footer {
+			margin-left: -210px;
+			margin-bottom: 10px;
+		}
+	}
+	
+}
+
+.style-button {
+    color: #409EFF;
+	border-color: #c6e2ff;
+	background-color: #ecf5ff;
+}
+.user-tree {
+	height:380px;
+	.hos-tree{
+		height:380px;
+		overflow:auto
+	}
+}
+
+.role-edit{
+    .h89 {
+        height: 89px;
+    }
+    .rules-span {
+        //color:red;
+        font-size:12px;
+		//line-height: 80px;
+    }
+    .w300 {
+        width: 300px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .uoload .hos-upload--picture-card {
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+	}
+	
+	.disuoload {
+		height: 80px;
+	}
+	
+	.uoload {
+		height: 80px;
+	}
+	
+	.disuoload .hos-upload--picture-card {
+		display: none;
+		/* 上传按钮隐藏 */
+	}
+	
+	.hos-upload-list--picture-card .hos-upload-list__item {
+		width: 80px;
+		height: 80px;
+	}
+}

@@ -1,0 +1,15 @@
+.hos-select-dropdownCurrent{
+  width: 300px;
+  .hos-select-dropdown__item {
+    display: inline;
+  }
+}
+/*修改密码里用于密码策略信息提示和显示密码按钮的样式*/
+.lengthStrClass{
+  font-size: small;
+  font-weight: 200;
+  float: left;
+}
+.iconPos {
+  padding-right: 5px;
+}

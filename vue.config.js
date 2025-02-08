@@ -7,6 +7,7 @@ module.exports = defineConfig({
       alias: {
         '@': path.resolve(__dirname, 'src/'),
         '@axios': path.resolve(__dirname, 'src/axios'),
+        '@assets': path.resolve(__dirname, 'src/assets'),
         '@router': path.resolve(__dirname, 'src/router'),
         '@store': path.resolve(__dirname, 'src/store'),
         '@views': path.resolve(__dirname, 'src/views'),

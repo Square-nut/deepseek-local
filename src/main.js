@@ -6,12 +6,14 @@ import App from "./App.vue";
 import axios from "@axios";
 import router from "@router";
 import store from "@store";
+import HosUI from "hosui";
 // import VueDND from "awe-dnd"
 
+require("@assets/index.scss");
 
+Vue.use(HosUI);
 
 Vue.config.productionTip = false;
-
 
 new Vue({
   router,
