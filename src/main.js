@@ -10,6 +10,7 @@ import HosUI from "hosui";
 // import VueDND from "awe-dnd"
 
 require("@assets/index.scss");
+require("@assets/zxx.css");
 
 Vue.use(HosUI);
 

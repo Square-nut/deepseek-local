@@ -14,6 +14,9 @@ export class Interceptors {
     // 请求拦截器
     this.instance.interceptors.request.use(
     	function (config) {
+				console.log(config)
+				if(config.baseURL.includes('localhost:3001')) config.headers['Authorization'] = 'Bearer ' + sessionStorage.getItem('chatSessionId')
+				
 				return config
 			},
 		function (error) {

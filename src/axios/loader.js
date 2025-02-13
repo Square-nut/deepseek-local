@@ -31,7 +31,7 @@ export default (key) => {
 			key,
 			api: module[name],
 			module,
-			config: module['$config'] || {},
+			config: module['$CONFIG'] || {},
 			isDomain
 		}
 	} catch (e) {
